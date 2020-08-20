@@ -1,0 +1,86 @@
+/*========================
+Declare variables for page
+=========================*/
+:root {
+  /*color scheme*/
+
+  /*font*/
+}
+
+/*======================================
+Back to Basics - reset browser defaults
+=======================================*/
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/*set global styles*/
+body * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+}
+
+/*reset default font - never shall Time New Roman be seen agan!*/
+
+h1,
+p,
+li,
+code {
+}
+
+/*================
+Layout
+=================*/
+
+/*================
+Nav Menu Bar
+=================*/
+
+.nav-bar {
+}
+
+/*================
+Extra Font Styling
+=================*/
+
+/*================
+Section Styling
+=================*/
+
+/*=====
+Footer
+======*/
+
+/*==========
+Link styles
+===========*/
+
+/*================
+The little touches
+=================*/
+
+/*In case of image not found*/
+
+/*Back to top*/
+
+/*=============
+Responsiveness
+===============*/
+
+/*Media queries for portable screen views - tablets and phones*/
+
+/*=============
+Accessibility
+===============*/
+/*Media queries for accessibility*/
+
+/*=============
+Print
+===============*/
+/*Media queries for print view*/
