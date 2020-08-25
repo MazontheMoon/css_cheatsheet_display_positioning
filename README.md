@@ -9,7 +9,7 @@ Web Browser
 
 * HTML
 * CSS
-* Sweat and tears and laughter
+* Sweat, some tears and a bit of laughter
 
 ## Software
 
@@ -24,8 +24,28 @@ Version #1.1 - Initial Content
 
 ## Table of Contents 
 
-* Display
-* Positioning
+1. Display
+1a. Block
+1b. Inline
+1c. Inline block
+1d. None
+1e. Flex (link to a seperate project as a large section)
+1f. Grid (link to a seperate project as a large section)
+1g. Overflow
+
+2. Positioning
+2a. Static
+2b. Relative
+2c. Fixed
+2d. Absolute
+2e. Sticky
+
+3. Z-Index
+
+4. Floating 
+4.a Clearfix
+
+
 
 ## Authors
 

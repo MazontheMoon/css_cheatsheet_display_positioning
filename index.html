@@ -11,18 +11,32 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" >
   </head>
-  <!----------------------------------------------------------
+<!----------------------------------------------------------
 My CSS Cheat Sheet for learning CSS - Display & Positioning
 -----------------------------------------------------------
-Finding your way around
+Finding your way around 
 ================================================
 1. Header
-2. Nav menu
-3. Main Content - Article 1 - Display
- 3.a
-4. Main Content - Article 2 - Positioning
- 4.a
-5. Footer
+2. Nav bar (4 menu buttons)
+3. Main - Intro & Sections
+4. Section - Display
+ 4a. Block
+ 4b. Inline
+ 4c. Inline block
+ 4d. None
+ 4e. Flex (link to a seperate project as a large section)
+ 4f. Grid (link to a seperate project as a large section)
+ 4g. Overflow
+5. Section - Positioning
+ 5a. Static
+ 5b. Relative
+ 5c. Fixed
+ 5d. Absolute
+ 5e. Sticky
+6. Section - Z-Index
+7. Section - Floating
+ 7a. Clearfix
+8.Footer
 --------------------------------------------------->
 
 <body>
@@ -30,14 +44,50 @@ Finding your way around
   <header id="top-of-page">
     <h1></h1>
   </header>
-  <!--nav menu-->
-  <nav></nav>
+  <!--nav section-->
+  <nav>
+    <!--nav bar-->
+    <ul>
+      <!--nav menu buttons-->
+      <li><span class="nav-button"><a href="#section-intro">Intro</a></span></li>
+      <li><span class="nav-button"><a href="#section-display">Display</a></span></li>
+      <li><span class="nav-button"><a href="#section-position">Positioning</a></span></li>
+      <li><span class="nav-button"><a href="#section-z-index">Z-Index</a></span></li>
+      <li><span class="nav-button"><a href="#section-float">Float</a></span></li>
+    </ul>
+  </nav>
   <!--main content for page-->
-  <main></main>
+  <main>
+    <!--Section - Intro-->
+    <section id="section-intro">
+      <header></header>
+      <div class="section-content-box"></div>
+    </section>
+    <!--Section - Display-->
+    <section id="section-display">
+      <header></header>
+      <div class="section-content-box"></div>
+    </section>
+    <!--Section - Positioning-->
+    <section id="section-position">
+      <header></header>
+      <div class="section-content-box"></div>
+    </section>
+    <!--Section - Z-Index-->
+    <section id="section-z-index">
+      <header></header>
+      <div class="section-content-box"></div>
+    </section>
+    <!--Section - Floating-->
+    <section id="section-float">
+      <header></header>
+      <div class="section-content-box"></div>
+    </section>
+  </main>
   <!--footer-->
   <footer>
     <!--Made by Me  - Github, Codepen, LinkedIn and Wordpress blog-->
-    <div id="allaboutme">
+    <div id="all-about-me">
       <p>Designed by <abbr title="Mary Ronan">MazOnTheMoon</abbr> 2020</p>
       <p><a href="https://www.linkedin.com/in/mary-ronan/" target="_blank"> <span class="fab fa-linkedin"> </span></a>
         <a href="https://github.com/MazontheMoon" target="_blank"> <span class="fab fa-github-square"> </span></a>
@@ -46,7 +96,7 @@ Finding your way around
       </p>
     </div>
     <!--Back to top shortcut-->
-    <div class="backtotop"><a class="toplink" href="#top"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+    <div class="backtotop"><a class="toplink" href="#top-of-page"><i class="far fa-arrow-alt-circle-up"></i></a></div>
   </footer>
- </body>
+</body>
 </html>
