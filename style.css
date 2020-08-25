@@ -1,3 +1,7 @@
+/*=====================================================
+Stylesheet for CSS Cheatsheet - Display and Positioning
+======================================================*/
+
 /*========================
 Declare variables for page
 =========================*/
@@ -38,34 +42,108 @@ code {
 Layout
 =================*/
 
+/*Grid for sections*/
+
+/*================
+Header
+=================*/
+
+/*container box for header section - used for grid layout*/
+header {
+}
+
+/*styling for header*/
+h1 {
+  width: 100%;
+}
 /*================
 Nav Menu Bar
 =================*/
 
-.nav-bar {
+/*container box for nav section - used for grid layout*/
+nav {
+}
+
+/*styling for nav bar */
+nav ul {
+}
+
+/*styling for menu buttons - outer*/
+nav ul li {
+}
+
+/*styling for menu buttons - inner*/
+
+.nav-button {
+}
+/*=============
+Main Sections
+==============*/
+
+/*container box for main section - used for grid layout*/
+main {
+}
+
+/*styling for the sections*/
+section {
+}
+
+/*section heading*/
+section > header {
+}
+
+/*section content*/
+.section-content-box {
+}
+
+/*=====
+Footer
+======*/
+
+/*container box for footer section - used for grid layout*/
+footer {
+}
+
+/*styling for footer*/
+#all-about-me {
 }
 
 /*================
 Extra Font Styling
 =================*/
 
-/*================
-Section Styling
-=================*/
+/*code examples*/
 
-/*=====
-Footer
-======*/
+/*Abbreviation styles*/
+
+/*LOOK AT ME!...AKA highlighted text*/
+
+/*Author link in footer*/
 
 /*==========
 Link styles
 ===========*/
+a {
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}
 
 /*================
 The little touches
 =================*/
-
-/*In case of image not found*/
 
 /*Back to top*/
 
@@ -73,7 +151,9 @@ The little touches
 Responsiveness
 ===============*/
 
-/*Media queries for portable screen views - tablets and phones*/
+/*Media queries for portable screen views - tablets and large phone screens*/
+
+/*Media queries for portable screen views - small phone screens*/
 
 /*=============
 Accessibility
