@@ -24,27 +24,28 @@ Version #1.1 - Initial Content
 
 ## Table of Contents 
 
-1. Display
-1a. Block
-1b. Inline
-1c. Inline block
-1d. None
-1e. Flex (link to a seperate project as a large section)
-1f. Grid (link to a seperate project as a large section)
-1g. Overflow
+1. Intro
 
-2. Positioning
-2a. Static
-2b. Relative
-2c. Fixed
-2d. Absolute
-2e. Sticky
+2. Display
+2a. Block
+2b. Inline
+2c. Inline block
+2d. Flex (link to a seperate project as a large section)
+2e. Grid (link to a seperate project as a large section)
+2f. None
 
-3. Z-Index
+3. Positioning
+3a. Static
+3b. Relative
+3c. Fixed
+3d. Absolute
+3e. Sticky
 
-4. Floating 
-4.a Clearfix
+4. Z-Index
 
+5. Floating 
+
+6. Overflow
 
 
 ## Authors
