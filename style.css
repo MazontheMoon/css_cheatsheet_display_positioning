@@ -1,7 +1,3 @@
-/*=====================================================
-Stylesheet for CSS Cheatsheet - Display and Positioning
-======================================================*/
-
 /*========================
 Declare variables for page
 =========================*/
@@ -33,9 +29,12 @@ body * {
 /*reset default font - never shall Time New Roman be seen agan!*/
 
 h1,
+h3,
+h5,
 p,
 li,
-code {
+code,
+abbr {
 }
 
 /*================
@@ -73,7 +72,6 @@ nav ul li {
 }
 
 /*styling for menu buttons - inner*/
-
 .nav-button {
 }
 /*=============
@@ -94,6 +92,18 @@ section > header {
 
 /*section content*/
 .section-content-box {
+}
+
+/*subsection*/
+.subsection {
+}
+
+/*sub-section header*/
+.sub-section-header-box {
+}
+
+/*sub-section content*/
+.sub-section-content-box {
 }
 
 /*=====
