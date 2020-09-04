@@ -227,21 +227,69 @@ Finding your way around
       <header>
         <h3>Z-Index</h3>
       </header>
-      <div class="section-content-box"></div>
+      <div class="section-content-box">
+        <p>When elements are positioned they can overlap.</p>
+        <p>Z-index is used to specify the stack order of elements (higher value on top and can also use -1)</p>
+        <!--Create a stack of coloured boxes to show the stacking effect-->
+        <div id="z-index-example">
+
+        </div>
+      </div>
     </section>
     <!--Section - Floating-->
     <section id="section-float">
       <header>
         <h3>Float</h3>
       </header>
-      <div class="section-content-box"></div>
+      <div class="section-content-box">
+        <p>Float and Clear go hand in hand with each other.</p>
+        <p>The float property specifies how an element should float and the clear property specifies what elements can float beside the cleared element and on which side.</p>
+        <code>float: left;</code>
+        <code>clear: left;</code>
+        <p>It’s simplest use is to wrap text around images....but this was before flex and grid came along so will see on older sites but probably not on any newer projects</p>
+        <p>Float values are:</p>
+        <ul class="sub-section-content-box-list">
+          <li>left</li>
+          <li>right</li>
+          <li>none</li>
+          <li>inherit</li>
+        </ul>
+        <p>Clear values are:</p>
+        <ul class="sub-section-content-box-list">
+          <li>left</li>
+          <li>right</li>
+          <li>both</li>
+        </ul>
+        <p class="sub-section-content-box-mini-header">Clearfix</p>
+        <p>If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.</p>
+        <p>One way to fix it is with this:</p>
+        <code>.clearfix { overflow: auto; }</code>
+        <p>... and it works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). Instead it is much better to do it this way:</p>
+        <code>.clearfix::after { <br>
+          content: ""; <br>
+          clear: both; <br>
+          display: table; <br>
+          }</code>
+      </div>
     </section>
     <!--Section - Overflow-->
     <section id="section-overflow">
       <header>
         <h3>Overflow</h3>
       </header>
-      <div class="section-content-box"></div>
+      <div class="section-content-box">
+        <p>When the size of a box is set with absolute values the content may not fit within the allowed size and will overflow.</p>
+        <code>overflow: auto;</code>
+        <p>The overflowing content is hidden and scroll bars are shown</p>
+        <code>overflow: hidden;</code>
+        <p>The overflowing content is hidden </p>
+        <code>overflow: visible;</code>
+        <p>The overflowing content is shown outside the box (default value)</p>
+        <code>overflow-x;</code>
+        <p>The overflowing content has a scroll bar for the x-axis</p>
+        <code>overflow-y;</code>
+        <p>The overflowing content has a scroll bar for the y-axis</p>
+      </div>
     </section>
   </main>
   <!--footer-->
