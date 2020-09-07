@@ -1,0 +1,19 @@
+/*========================
+Declare variables for page
+=========================*/
+:root {
+  /*color scheme*/
+
+  /*font*/
+}
+
+/*set global styles*/
+body * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+}
+/*Define shape of all boxes*/
+/*Position the parent box*/
+/*Stack the boxes*/
