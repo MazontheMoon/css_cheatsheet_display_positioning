@@ -3,8 +3,13 @@ Declare variables for page
 =========================*/
 :root {
   /*color scheme*/
-
-  /*font*/
+  --box1: #424874;
+  --box2: #3d5afe;
+  --box3: #40c4ff;
+  --box4: #69f0ae;
+  --box5: #ffff8d;
+  --box6: #ff6e40;
+  --box7: #ff5252;
 }
 
 /*set global styles*/
@@ -14,6 +19,53 @@ body * {
   -moz-box-sizing: border-box;
   margin: 0;
 }
+
+/*Text*/
+p {
+  text-align: center;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+}
+
 /*Define shape of all boxes*/
-/*Position the parent box*/
+div {
+  height: 125px;
+  width: 125px;
+  border: solid 3px black;
+  margin: 5px;
+}
+
 /*Stack the boxes*/
+div {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+#background-box {
+  background-color: var(--box1);
+}
+
+#negative-z-box {
+  background-color: var(--box2);
+}
+
+#block-box {
+  background-color: var(--box3);
+}
+
+#float-box {
+  background-color: var(--box4);
+}
+
+#inline-box {
+  background-color: var(--box5);
+}
+
+#auto-z-box {
+  background-color: var(--box6);
+}
+
+#positive-z-box {
+  background-color: var(--box7);
+}
