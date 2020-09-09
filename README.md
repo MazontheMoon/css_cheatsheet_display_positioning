@@ -27,19 +27,19 @@ Version #1.1 - Initial Content
 1. Intro
 
 2. Display
-2a. Block
-2b. Inline
-2c. Inline block
-2d. Flex (link to a seperate project as a large section)
-2e. Grid (link to a seperate project as a large section)
-2f. None
+ a. Block
+ b. Inline
+ c. Inline block
+ d. Flex (link to a seperate project as a large section)
+ e. Grid (link to a seperate project as a large section)
+ f. None
 
 3. Positioning
-3a. Static
-3b. Relative
-3c. Fixed
-3d. Absolute
-3e. Sticky
+ a. Static
+ b. Relative
+ c. Fixed
+ d. Absolute
+ e. Sticky
 
 4. Z-Index
 
