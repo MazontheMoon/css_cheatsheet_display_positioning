@@ -117,7 +117,11 @@ section > header {
 /*================
 Figures and Images
 ==================*/
+#z-index-img {
+}
 
+z-index-img figcaption {
+}
 /*=====
 Footer
 ======*/
