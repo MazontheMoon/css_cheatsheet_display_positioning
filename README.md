@@ -28,19 +28,19 @@ Version #1.2 - Initail Style
 1. Intro
 
 2. Display
-  a. Block
-  b. Inline
-  c. Inline block
-  d. Flex (link to a seperate project as a large section)
-  e. Grid (link to a seperate project as a large section)
-  f. None
+   a. Block
+   b. Inline
+   c. Inline block
+   d. Flex (link to a seperate project as a large section)
+   e. Grid (link to a seperate project as a large section)
+   f. None
 
 3. Positioning
-  a. Static
-  b. Relative
-  c. Fixed
-  d. Absolute
-  e. Sticky
+   a. Static
+   b. Relative
+   c. Fixed
+   d. Absolute
+   e. Sticky
 
 4. Z-Index
 
