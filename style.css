@@ -3,8 +3,16 @@ Declare variables for page
 =========================*/
 :root {
   /*color scheme*/
+  --text-colour: #040303; /*Black*/
+  --heading-background-colour: #6a7b76; /*Green*/
+  --section-background-colour: #beb0a7; /*Beige*/
+  --section-border-colour: #3a4e48; /*Dark Green*/
+  --sub-section-header-colour: #8b9d83; /*Light Green*/
 
   /*font*/
+
+  --header-font: "Abel", "Trebuchet MS", sans-serif;
+  --text-font: "Ubuntu", Verdana, sans-serif;
 }
 
 /*======================================
@@ -33,8 +41,9 @@ h3,
 h5,
 p,
 li,
-code,
+figcaption,
 abbr {
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 /*================
