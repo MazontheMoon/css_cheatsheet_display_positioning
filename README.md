@@ -27,13 +27,13 @@ Version #1.2 - Initail Style
 
 1. Intro
 
-2. Display
-   a. Block
-   b. Inline
-   c. Inline block
-   d. Flex (link to a seperate project as a large section)
-   e. Grid (link to a seperate project as a large section)
-   f. None
+2. Display 
+  1. Block 
+  2. Inline 
+  3. Inline block 
+  4. Flex (link to a seperate project as a large section) 
+  5. Grid (link to a seperate project as a large section) 
+  6. None
 
 3. Positioning
    a. Static
