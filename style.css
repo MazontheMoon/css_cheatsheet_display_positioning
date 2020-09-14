@@ -3,11 +3,12 @@ Declare variables for page
 =========================*/
 :root {
   /*color scheme*/
-  --text-colour: #040303; /*Black*/
-  --heading-background-colour: #6a7b76; /*Green*/
-  --section-background-colour: #beb0a7; /*Beige*/
-  --section-border-colour: #3a4e48; /*Dark Green*/
-  --sub-section-header-colour: #8b9d83; /*Light Green*/
+  --text-dark-colour: #222222; /*black*/
+  --text-light-colour: #fceef5; /*blush*/
+  --heading-background-colour: #006ba6; /*darkcyan*/
+  --section-background-colour: #fceef5; /*lavenderblush*/
+  --footer-background-colour: #0496ff; /*blue*/
+  --highlight-colour: #d7b9d5; /*thistle (lavendar)*/
 
   /*font*/
 
@@ -51,18 +52,34 @@ Layout
 =================*/
 
 /*Grid for sections*/
+body {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "nav main main"
+    "nav footer footer";
+  grid-gap: 5px;
+  margin: 0 auto;
+  background-color: var(----text-colour, black);
+}
 
 /*================
 Header
 =================*/
 
 /*container box for header section - used for grid layout*/
-header {
+body > header {
+  grid-area: header;
+  background-color: var(--heading-background-colour);
+  padding: 10px;
 }
 
 /*styling for header*/
 h1 {
   width: 100%;
+  text-align: center;
 }
 /*================
 Nav Menu Bar
@@ -70,6 +87,8 @@ Nav Menu Bar
 
 /*container box for nav section - used for grid layout*/
 nav {
+  grid-area: nav;
+  background-color: var(--heading-background-colour);
 }
 
 /*styling for nav bar */
@@ -89,6 +108,8 @@ Main Sections
 
 /*container box for main section - used for grid layout*/
 main {
+  grid-area: main;
+  background-color: var(--section-background-colour);
 }
 
 /*styling for the sections*/
@@ -137,6 +158,8 @@ Footer
 
 /*container box for footer section - used for grid layout*/
 footer {
+  grid-area: footer;
+  background-color: var(--footer-background-colour);
 }
 
 /*styling for footer*/
