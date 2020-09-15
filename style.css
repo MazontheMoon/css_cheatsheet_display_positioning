@@ -2,7 +2,7 @@
 Declare variables for page
 =========================*/
 :root {
-  /*color scheme*/
+  /*colour scheme*/
   --text-dark-colour: #222222; /*black*/
   --text-light-colour: #fceef5; /*blush*/
   --heading-background-colour: #006ba6; /*darkcyan*/
@@ -44,7 +44,7 @@ p,
 li,
 figcaption,
 abbr {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /*================
@@ -59,36 +59,50 @@ body {
     "header header header"
     "nav main main"
     "nav main main"
-    "nav footer footer";
-  grid-gap: 5px;
-  margin: 0 auto;
-  background-color: var(----text-colour, black);
+    "footer footer footer";
+  margin: 0;
+  background-color: var(--text-dark-colour, black);
+}
+
+/*====
+Fonts
+=======*/
+
+/*styling for header*/
+h1 {
+  width: 100%;
+  text-align: center;
+  line-height: 150%;
+  font-size: 2.5rem;
+  font-family: var(--header-font);
 }
 
 /*================
 Header
 =================*/
 
-/*container box for header section - used for grid layout*/
+/*container box for header section - used for grid placement*/
 body > header {
   grid-area: header;
-  background-color: var(--heading-background-colour);
-  padding: 10px;
+  background-color: var(--heading-background-colour, darkcyan);
+  padding: 0.75rem;
 }
 
-/*styling for header*/
-h1 {
-  width: 100%;
-  text-align: center;
-}
 /*================
 Nav Menu Bar
 =================*/
 
-/*container box for nav section - used for grid layout*/
+/*container box for nav section - used for grid placement*/
 nav {
   grid-area: nav;
-  background-color: var(--heading-background-colour);
+  background-color: var(--heading-background-colour, darkcyan);
+  background: linear-gradient(
+    180deg,
+    var(--heading-background-colour, darkcyan),
+    var(--footer-background-colour, blue)
+  );
+  border-top: solid var(--text-dark-colour, black) 0.3rem;
+  border-bottom: solid var(--text-dark-colour, black) 0.3rem;
 }
 
 /*styling for nav bar */
@@ -102,14 +116,18 @@ nav ul li {
 /*styling for menu buttons - inner*/
 .nav-button {
 }
+
 /*=============
 Main Sections
 ==============*/
 
-/*container box for main section - used for grid layout*/
+/*container box for main section - used for grid placement*/
 main {
   grid-area: main;
-  background-color: var(--section-background-colour);
+  background-color: var(--section-background-colour, lavenderblush);
+  border: solid var(--text-dark-colour, black) 0.3rem;
+  border-right: none;
+  padding: 0.5rem;
 }
 
 /*styling for the sections*/
@@ -156,10 +174,10 @@ z-index-img figcaption {
 Footer
 ======*/
 
-/*container box for footer section - used for grid layout*/
+/*container box for footer section - used for grid placement*/
 footer {
   grid-area: footer;
-  background-color: var(--footer-background-colour);
+  background-color: var(--footer-background-colour, blue);
 }
 
 /*styling for footer*/
@@ -181,6 +199,8 @@ Extra Font Styling
 /*==========
 Link styles
 ===========*/
+
+/*Use brightness () for hover effects*/
 a {
 }
 

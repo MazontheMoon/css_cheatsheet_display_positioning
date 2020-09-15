@@ -27,20 +27,23 @@ Version #1.2 - Initail Style
 
 1. Intro
 
-2. Display 
-  1. Block 
-  2. Inline 
-  3. Inline block 
-  4. Flex (link to a seperate project as a large section) 
-  5. Grid (link to a seperate project as a large section) 
-  6. None
+2. Display
+
+  a. Block
+  b. Inline
+  c. Inline block
+  d. Flex (link to a seperate project as a large section)
+  e. Grid (link to a seperate project as a large section)
+  f. None
 
 3. Positioning
-   a. Static
-   b. Relative
-   c. Fixed
-   d. Absolute
-   e. Sticky
+
+  a. Static
+  b. Relative
+  c. Fixed
+  d. Absolute
+  e. Sticky
+
 
 4. Z-Index
 
@@ -79,8 +82,7 @@ Examples:
 * W3Schools
 * Font Awesome
 * Google fonts
-* WikiCommons
-* Coolors
+* Coolors.co
 
 ## Acknowledgments
 We would like to offer our appreciation to Spotify and the *Game of Thrones - Relaxing music* soundtracks for providing the suitable background noise for this project
