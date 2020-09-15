@@ -28,6 +28,7 @@ Version #1.2 - Initail Style
 1. Intro
 
 2. Display
+
   a. Block
   b. Inline
   c. Inline block
@@ -36,6 +37,7 @@ Version #1.2 - Initail Style
   f. None
 
 3. Positioning
+
   a. Static
   b. Relative
   c. Fixed
@@ -79,8 +81,7 @@ Examples:
 * W3Schools
 * Font Awesome
 * Google fonts
-* WikiCommons
-* Coolors
+* Coolors.co
 
 ## Acknowledgments
 We would like to offer our appreciation to Spotify and the *Game of Thrones - Relaxing music* soundtracks for providing the suitable background noise for this project
