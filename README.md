@@ -44,6 +44,7 @@ Version #1.2 - Initail Style
   d. Absolute
   e. Sticky
 
+
 4. Z-Index
 
 5. Floating 
