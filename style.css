@@ -75,7 +75,9 @@ h1 {
   line-height: 150%;
   font-size: 2.5rem;
   font-family: var(--header-font);
-  text-shadow: -0.1rem -0.1rem 0.3rem var(--text-light-colour, white);
+  color: var(--text-light-colour, white);
+  text-shadow: -0.1rem -0.1rem 0.3rem var(--text-dark-colour, black),
+    0.2rem 0.2rem 0.3rem var(--text-dark-colour, black);
 }
 
 /*styling for section header*/
@@ -157,6 +159,8 @@ nav ul li {
 
 .nav-button:hover {
   border-bottom: solid var(--text-light-colour, white) 0.2rem;
+  padding-left: 2rem;
+  transition: all 1s;
 }
 /*=============
 Main Sections
@@ -196,23 +200,53 @@ section p {
   list-style: square;
 }
 /*subsection*/
-.subsection {
+.sub-section {
+  margin-left: 1rem;
 }
 
 /*sub-section header*/
 .sub-section-header-box {
+  margin: 0.5rem 0;
 }
 
 /*sub-section content*/
 .sub-section-content-box {
+  padding-left: 1rem;
 }
 
 /*sub-section content list*/
-.sub-section-content-box-list {
+.sub-section-content-box-list li {
+  list-style: circle;
 }
 
 /*sub-section content list*/
 .sub-section-content-box-mini-header {
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 150%;
+}
+
+/*================
+Code boxes
+==================*/
+code {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  line-height: 200%;
+  border: 0.1rem dotted black;
+  border-radius: 0.5rem;
+  color: var(--text-light-colour, white);
+  background-color: var(--text-dark-colour, black);
+}
+
+/*space around the code boxes when in a paragraph*/
+p + code {
+  margin-top: 0.5rem;
+}
+
+code + p {
+  margin-top: 0.5rem;
 }
 
 /*================
