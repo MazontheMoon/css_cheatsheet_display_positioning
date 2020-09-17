@@ -136,10 +136,13 @@ nav {
   );
   border-top: solid var(--text-dark-colour, black) 0.3rem;
   border-bottom: solid var(--text-dark-colour, black) 0.3rem;
+  position: relative;
 }
 
 /*styling for nav bar */
 nav ul {
+  position: sticky;
+  top: 0;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -254,10 +257,44 @@ code + p {
   margin-top: 0.5rem;
 }
 
+/*====================
+Overflow example boxes
+=====================*/
+/*set boxes with borders to be smaller than content*/
+.overflow-box {
+  border: dotted var(--text-dark-colour, black) 0.1rem;
+  width: 20rem;
+  height: 2rem;
+}
+
+#overflow-auto-box {
+  overflow: auto;
+}
+
+#overflow-hidden-box {
+  overflow: hidden;
+}
+
+#overflow-visible-box {
+  margin-bottom: 1rem;
+}
+
+#overflow-x-box {
+  display: block;
+  white-space: nowrap;
+  height: 3rem;
+  overflow-x: scroll;
+}
+
+#overflow-y-box {
+  overflow-y: scroll;
+}
+
 /*================
 Figures and Images
 ==================*/
 #z-index-img {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -279,6 +316,7 @@ Footer
 /*container box for footer section - used for grid placement*/
 footer {
   grid-area: footer;
+  position: relative;
   background-color: var(--footer-background-colour, blue);
 }
 
@@ -286,24 +324,13 @@ footer {
 #all-about-me {
 }
 
-/*================
-Extra Font Styling
-=================*/
-
-/*code examples*/
-
-/*Abbreviation styles*/
-
-/*LOOK AT ME!...AKA highlighted text*/
-
-/*Author link in footer*/
-
 /*==========
 Link styles
 ===========*/
 
 /*Use brightness () for hover effects*/
 a {
+  color: var(---text-dark-colour, black);
 }
 
 a:link {
@@ -316,6 +343,7 @@ a:focus {
 }
 
 a:hover {
+  opacity: 0.5;
 }
 
 a:active {
@@ -326,6 +354,30 @@ The little touches
 =================*/
 
 /*Back to top*/
+.backtotop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0.2rem;
+  font-size: 1.5rem;
+}
+
+/*In the dreaded case of image not found*/
+#image:after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.3rem;
+  border: 0.1rem dashed var(--text-dark-colour);
+  background-color: var(--footer-background-colour);
+  z-index: 1;
+  font-family: verdana;
+  font-size: 0.8em;
+  text-align: center;
+  content: "Image of " attr(alt) " was not found";
+}
 
 /*=============
 Responsiveness

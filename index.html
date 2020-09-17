@@ -217,7 +217,7 @@ Finding your way around
           <div class="sub-section-content-box">
             <code>position:sticky;</code>
             <p>The element is positioned based on the users scroll position.</p>
-            <p>It toggles between relative and fixed, is relative until a given offset is met in viewport and then is sticky.</p>
+            <p>It toggles between relative and fixed, is relative until a given offset is met in viewport and then is sticky (like the menu on this page if you are using a monitor).</p>
           </div>
         </div>
       </div>
@@ -231,7 +231,7 @@ Finding your way around
         <p>When elements are positioned they can overlap.</p>
         <p>Z-index is used to specify the stack order of elements (higher value on top and can also use -1)</p>
         <figure id="z-index-img">
-          <img src="https://raw.githubusercontent.com/MazontheMoon/css_cheatsheet_display_positioning/master/img/z-index-stack.png" title="z-index flow in a stack of boxes" alt="A stack of coloured boxes representing the order used in z-indexing">
+          <img id="image" src="http s://raw.githubusercontent.com/MazontheMoon/css_cheatsheet_display_positioning/master/img/z-index-stack.png" title="z-index flow in a stack of boxes" alt="z-indexing diagram">
           <figcaption>A stack of coloured boxes representing the order used in z-indexing</figcaption>
         </figure>
       </div>
@@ -280,15 +280,16 @@ Finding your way around
       <div class="section-content-box">
         <p>When the size of a box is set with absolute values the content may not fit within the allowed size and will overflow.</p>
         <code>overflow: auto;</code>
-        <p>The overflowing content is hidden and scroll bars are shown</p>
+        <p id="overflow-auto-box" class="overflow-box">The overflowing content is hidden and scroll bars are shown</p>
         <code>overflow: hidden;</code>
-        <p>The overflowing content is hidden </p>
+        <p id="overflow-hidden-box" class="overflow-box">The overflowing content is hidden. You will not see me! </p>
         <code>overflow: visible;</code>
-        <p>The overflowing content is shown outside the box (default value)</p>
-        <code>overflow-x;</code>
-        <p>The overflowing content has a scroll bar for the x-axis</p>
-        <code>overflow-y;</code>
-        <p>The overflowing content has a scroll bar for the y-axis</p>
+        <p id="overflow-visible-box" class="overflow-box">The overflowing content is shown outside the box (default value)</p>
+        <p>Overflow can also be specified for the x-axis and y-axis seperately using the value <span class="highlight">scroll</span> or <span class="highlight">auto</span></p>
+        <code>overflow-x: scroll;</code>
+        <p id="overflow-x-box" class="overflow-box">The overflowing content has a scroll bar for the x-axis (Don't forget to set <span class="highlight">white-space: nowrap;</span></p>
+        <code>overflow-y: scroll;</code>
+        <p id="overflow-y-box" class="overflow-box">The overflowing content has a scroll bar for the y-axis</p>
       </div>
     </section>
   </main>
@@ -304,7 +305,7 @@ Finding your way around
       </p>
     </div>
     <!--Back to top shortcut-->
-    <div class="backtotop"><a class="toplink" href="#top-of-page"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+    <div class="backtotop"><a class="toplink" href="#top-of-page"> <i class="far fa-arrow-alt-circle-up"></i></a></div>
   </footer>
 </body>
 </html>
