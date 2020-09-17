@@ -105,6 +105,11 @@ abbr {
   font-family: var(--text-font);
 }
 
+/*To make text in paragraph stand out but is not read differently on screenreader*/
+.highlight {
+  font-style: italic;
+}
+
 /*================
 Header
 =================*/
@@ -253,9 +258,19 @@ code + p {
 Figures and Images
 ==================*/
 #z-index-img {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
 }
 
-z-index-img figcaption {
+#z-index-img img {
+  border: solid var(--text-dark-colour, black) 0.2rem;
+}
+
+#z-index-img figcaption {
+  margin-top: 0.2rem;
 }
 /*=====
 Footer
