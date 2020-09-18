@@ -20,7 +20,8 @@ Web Browser
 ## Versioning
 
 Version #1.1 - Initial Content
-Version #1.2 - Initail Style
+Version #1.2 - Initial Style
+Version #1.3 - Accessibility and Responsiveness
 
 
 ## Table of Contents 
@@ -29,20 +30,20 @@ Version #1.2 - Initail Style
 
 2. Display
 
-  a. Block
-  b. Inline
-  c. Inline block
-  d. Flex (link to a seperate project as a large section)
-  e. Grid (link to a seperate project as a large section)
-  f. None
+  * Block
+  * Inline
+  * Inline block
+  * Flex (link to a seperate project as a large section)
+  * Grid (link to a seperate project as a large section)
+  * None
 
 3. Positioning
 
-  a. Static
-  b. Relative
-  c. Fixed
-  d. Absolute
-  e. Sticky
+  * Static
+  * Relative
+  * Fixed
+  * Absolute
+  * Sticky
 
 
 4. Z-Index
