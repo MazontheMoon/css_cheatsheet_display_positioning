@@ -397,12 +397,11 @@ Responsiveness
 /*Media queries for portable screen views - tablets and large phone screens*/
 
 @media screen and (max-width: 766px) {
+  /*display back-to-top*/
 }
 
-/*display back-to-top*/
 
 /*Media queries for portable screen views - small phone screens*/
-
 @media screen and (max-width: 320px) {
 }
 
