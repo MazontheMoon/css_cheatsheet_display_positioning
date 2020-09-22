@@ -409,35 +409,83 @@ Responsiveness
 /*=============
 Accessibility
 ===============*/
-/*Media queries for accessibility*/
 
 /*remove animation for sliding menu buttons*/
+@media (prefers-reduced-motion) {
+  .nav-button:hover {
+    padding-left: 0.5rem;
+  }
+}
 
 /*=============
 Print
 ===============*/
-/*Media queries for print view*/
+
 @media print {
   /*reset colours to plain black and white*/
+  body * {
+    background-color: none;
+    color: black;
+    border-left: none;
+  }
 
   /*font size - change px to pt*/
+  h1 {
+    font-size: 18pt;
+    text-shadow: none;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  h5 {
+    font-size: 14pt;
+  }
+
+  p,
+  li {
+    font-size: 12pt;
+  }
+
+  figcaaption,
+  abbr {
+    font-size: 10pt;
+  }
 
   /*remove unneeded elements*/
+  nav {
+    display: none;
+  }
 
   /*Layout - single column*/
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
 
-  /*display links from footer*/
-  footer a:link {
+  /*remove set size on overflow example boxes so all text is seen*/
+  .overflow-box {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*display links*/
+  a:link {
     margin: 0;
     display: block;
   }
 
-  footer a::after {
+  a::after {
     content: " [" attr(href) "]";
   }
 
-  footer .link a:link,
-  footer .link a:visited {
+  a:link,
+  a:visited {
     color: #000;
     background: none;
     padding: 0;
