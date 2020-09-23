@@ -396,13 +396,28 @@ Responsiveness
 
 /*Media queries for portable screen views - tablets and large phone screens*/
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 1024px) {
+  /*change nav menu to top of page under header and no longer fixed display - single column layout*/
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  /*set nav menu to row*/
+  nav ul {
+    display: flex;
+  }
+
   /*display back-to-top*/
 }
 
-
 /*Media queries for portable screen views - small phone screens*/
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 414px) {
 }
 
 /*=============
