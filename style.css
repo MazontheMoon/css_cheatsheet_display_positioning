@@ -420,11 +420,12 @@ Responsiveness
   }
 
   /*container margins, paddings and borders*/
-  body > header nav,
+  body > header,
+  nav,
   main,
   footer {
-    width: 95%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     padding: 0 0.1rem;
   }
 
@@ -448,13 +449,6 @@ Responsiveness
 
   .nav-button:hover {
     padding-left: 0;
-  }
-
-  main,
-  footer {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0 0.1rem;
   }
 
   main {
@@ -521,7 +515,7 @@ Responsiveness
   /*set nav menu to scrolling column*/
   nav ul {
     flex-flow: column nowrap;
-    max-height: 20vh;
+    max-height: 15vh;
     overflow: auto;
   }
 
