@@ -265,11 +265,12 @@ Finding your way around
         <p>One way to fix it is with this:</p>
         <code>.clearfix { overflow: auto; }</code>
         <p>... and it works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). Instead it is much better to do it this way:</p>
-        <code>.clearfix::after {
-          content: "";
-          clear: both;
-          display: table;
-          }</code>
+        <code>
+          <pre>.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }</pre></code>
       </div>
     </section>
     <!--Section - Overflow-->
