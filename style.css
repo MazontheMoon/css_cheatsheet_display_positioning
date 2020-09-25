@@ -70,6 +70,7 @@ Fonts
 
 /*styling for main header*/
 h1 {
+  padding: 0.5rem;
   text-align: center;
   line-height: 150%;
   font-size: 3.5rem;
@@ -248,10 +249,7 @@ code {
 }
 
 /*space around the code boxes when in a paragraph*/
-p + code {
-  margin-top: 0.5rem;
-}
-
+p + code,
 code + p {
   margin-top: 0.5rem;
 }
@@ -373,6 +371,13 @@ The little touches
   font-size: 1.5rem;
 }
 
+.backtotop a:hover {
+  color: var(--text-dark-colour, black);
+  background-color: var(--footer-background-colour, blue);
+  border-radius: 0.25rem;
+  opacity: 0.8;
+}
+
 /*In the dreaded case of image not found*/
 #image:after {
   display: inherit;
@@ -404,6 +409,7 @@ Responsiveness
       "nav"
       "main"
       "footer";
+    overflow-x: none;
   }
 
   /*set nav menu to row*/
@@ -413,27 +419,126 @@ Responsiveness
     justify-content: space-between;
   }
 
-  /*set nav menu to row*/
+  /*container margins, paddings and borders*/
+  body > header nav,
+  main,
+  footer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0.1rem;
+  }
+
+  body > header {
+    padding: 0.25rem;
+  }
+
+  nav {
+    border-top: solid var(--text-dark-colour, black) 0.2rem;
+    border-bottom: solid var(--text-dark-colour, black) 0.2rem;
+  }
+
+  nav ul li {
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+
+  .nav-button {
+    padding: 0 0.2rem;
+  }
+
+  .nav-button:hover {
+    padding-left: 0;
+  }
+
+  main,
+  footer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0.1rem;
+  }
+
+  main {
+    border-left: none;
+  }
+
+  section {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  section p {
+    padding: 0.2rem;
+  }
+  .section-content-box {
+    padding: 0.2rem 0;
+  }
+
+  .section-content-box ul {
+    margin: 0.2;
+  }
+
+  .sub-section {
+    margin-left: 0.25rem;
+  }
+
+  .sub-section-header-box {
+    margin: 0.25rem 0;
+  }
+
+  .sub-section-content-box {
+    padding-left: 0.2rem;
+  }
+
+  code {
+    padding: 0.3rem;
+  }
+
+  p + code,
+  code + p {
+    margin-top: 0.3rem;
+  }
+
+  #z-index-img {
+    margin: 0.2rem;
+  }
+
+  /*resize image to be smaller*/
+  img {
+    max-width: 80%;
+  }
+
   /*display back-to-top*/
+  .backtotop {
+    display: inline-block;
+  }
 }
 
 /*Media queries for portable screen views - small phone screens*/
 @media only screen and (max-width: 414px) {
-  /*testing purposes*/
-  body * {
-    border: solid 2px red;
+  h1 {
+    font-size: 2.25rem;
   }
-
-  /*set nav menu to column*/
+  /*set nav menu to scrolling column*/
   nav ul {
     flex-flow: column nowrap;
     max-height: 20vh;
     overflow: auto;
   }
 
-  /*resize image to be smaller*/
-  img {
-    max-width: 80%;
+  main,
+  footer {
+    width: 100vw;
+    margin: none;
+    padding: 0 0.1rem;
+  }
+
+  section {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .overflow-box {
+    width: 95%;
   }
 }
 
